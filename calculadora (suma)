@@ -1,0 +1,25 @@
+
+{
+
+{
+	var variable_a;
+	var variable_b;
+	var resultado;
+
+	alert("bienvenido a la calculadora loca")
+
+	var variable_a = prompt("por favor ingrese un numero",);
+	var variable_b = prompt("por favor ingrese otro numero",);
+
+   variable_a = parseInt (variable_a)
+   variable_b = parseInt (variable_b)
+
+	
+	
+ 	resultado = variable_a + variable_b
+
+
+	alert(resultado);
+	} 
+}
+
