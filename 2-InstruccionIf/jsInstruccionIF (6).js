@@ -13,16 +13,15 @@ var edad;
 	 alert("es menor");
 	 }
 
-	 
-	 
-    if(edad>17)
-	{		
-	 alert(" es mayor");
-	}
-	else
-	{	
-	 alert("es adolecente");
-	}
-	
+	 else{
+	 	if(edad>17)
+		{		
+	 	alert(" es mayor");
+		}
+		else
+		{	
+	 	alert("es adolecente");
+		}
+		}
 
 }//FIN DE LA FUNCIÓN
