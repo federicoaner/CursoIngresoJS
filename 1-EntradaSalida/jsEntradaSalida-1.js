@@ -12,4 +12,5 @@ function mostrar()
 	alert("tal cual"); // literal
 	alert(apellido); // alert puede mostrar variables
 	alert("apellido"); // literal x las comillas
-	alert(); // sale vacio
+	
+	//test git hub
