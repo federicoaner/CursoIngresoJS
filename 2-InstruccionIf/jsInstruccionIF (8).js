@@ -15,12 +15,12 @@ function mostrar()
 	}
 		else
 		{
-			if(edad>17&&estadoCivil == "Soltero")
+			if(edad>17&&estadoCivil == "Soltero") //mejor usar este if (solo) para ahorrar procesador
 			{
-			alert("es soltero y no es menor")
+			alert("es soltero y no es menor");
 			}
 			
 		}
-
+		
 
 }//FIN DE LA FUNCIÓN
