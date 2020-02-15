@@ -9,79 +9,88 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 function CalcularPrecio () 
-{
- 	var cantidadLamparas;
+{ 
+	var cantidadLamparas;
  	var precioBruto;
- 	var precioDescuento;
- 	var resultado;
- 	var precioLampara;
- 	var marca;
  	var descuento;
- 	
- 	cantidadLamparas=document.getElementById('Cantidad').value;
+ 	var marca;
+ 	var precioFinal;
+ 	var ingresosBrutos;
+ 	var precioMasIngresosBrutos;
+    cantidadLamparas=document.getElementById('Cantidad').value;
  	cantidadLamparas=parseInt(cantidadLamparas);
- 	precio=parseInt(precioLampara);
  	marca=document.getElementById('Marca').value;
- 	precioBruto=cantidadLamparas*35;
- 	descuento=0;
- 	precioLampara=35;
+    precioBruto=cantidadLamparas*35;
+
+    
  	
-
- 	if(cantidadLamparas>5)
+	if(cantidadLamparas>5)
  	{
-
- 		descuento=50
- 		
- 	}
-
+ 		descuento=50;
+	}
 	
-
-
+	
 	if(cantidadLamparas==5)
 	{
-		
 		if(marca=="ArgentinaLuz")
 		{
-		descuento=40
- 		}
- 		
- 	}
-
-		if(cantidadLamparas==4)
-		{
-		
-
-			if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
-		
-			{
-				descuento=25
- 		
-			}
-
-		
-				else
-					descuento=20 
-
+			descuento=40;
 		}
-			
- 		
-
-
-		if(cantidadLamparas==3)
+		else
 		{
-		
+			descuento=30;
+		}
+	}
+
+	if(cantidadLamparas==4)
+	{ 
+		if(marca=="ArgentinaLuz"||marca=="FelipeLamparas")
+		{
+			descuento=25;
+		}
+
+		else
+		{
+			descuento=20;
+		}
+
+	}
+
+
+	if(cantidadLamparas==3)
+	{
 		if(marca=="ArgentinaLuz")
-		{}
-		
- 		
+		{
+			descuento=15;
 		}
 
-		
-		
-		
+		if(marca=="FelipeLamparas")
+		{
+			descuento=10;
+		}
 
- 		
- 	document.getElementById('precioDescuento').value=precioDescuento;
-	 precioDescuento=(precioBruto-(precioBruto*descuento)/100);
+		else
+		{
+			descuento=50;
+		}
+    }
 
-}
+    
+	precioFinal=(precioBruto-(precioBruto*descuento)/100);
+	document.getElementById('precioDescuento').value=precioFinal;
+	ingresosBrutos=(precioFinal*10)/100;
+	precioMasIngresosBrutos=precioFinal+ingresosBrutos;
+	
+
+	
+	if(precioFinal>120)
+	{
+		
+		alert("IIBB Usted pago " + ingresosBrutos);
+    }
+ 	
+    ingresosBrutos=(precioFinal*10)/100;
+    document.getElementById('precioDescuento').value=precioMasIngresosBrutos;
+
+
+ } 
