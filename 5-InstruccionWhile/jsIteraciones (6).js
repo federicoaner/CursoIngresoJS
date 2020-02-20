@@ -13,10 +13,11 @@ function mostrar()
 	{
 
 	numero=prompt("ingreso otro numero");	
-	contador=contador+1;
+	
 	
 	numero=parseInt(numero);
 	acumulador=acumulador+numero;
+	contador=contador+1;
 	
 	}
 
