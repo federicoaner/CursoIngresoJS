@@ -18,6 +18,7 @@ function comenzar()
 		
 
 		console.log(numerosecreto);
+		contadorIntentos==contadorIntentos+1
 	
 
 }
@@ -39,7 +40,7 @@ function verificar()
 				alert("se paso")
 			}
 
-			else
+				else
 				{
 				alert("falta")
 				}
