@@ -6,7 +6,7 @@ var clave
 while(clave!="utn750")
 {
 
-	clave=prompt("clave incorrecta");
+	clave=prompt("clave incorrecta, intenta nuevamente");
 }
 
 

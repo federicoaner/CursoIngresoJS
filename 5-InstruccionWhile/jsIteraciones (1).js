@@ -9,16 +9,18 @@ function mostrar()
 	while(contador<10) //2daparte //fin del recorrido
 	{
 
-		
 		contador=contador+1; //3rparte
-		console.log(contador)
+				console.log(contador);
+
+		
 
 	}
 
 
 	//contador vale 10 aca
 
-	console.log(contador)
+			console.log(contador)
+
 
 
 }//FIN DE LA FUNCIÓN
