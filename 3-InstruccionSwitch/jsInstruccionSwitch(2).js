@@ -16,13 +16,8 @@ switch(mesDelAño)
 	case ("Agosto"):
 		alert("abrigate q hace frio");
 		break;
-	case ("Septiembre"):
-	case ("Octubre"):
-	case ("Noviembre"):
-	case ("Diciembre"):
-	case ("Enero"):
-	case ("Febrero"):
-	case ("Marzo"):
+		
+		default:
 		alert("ya paso el frio, ahora calor!!!");
 		break;
 
