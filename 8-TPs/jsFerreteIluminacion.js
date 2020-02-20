@@ -67,17 +67,22 @@ function CalcularPrecio ()
 						{
 						descuento=15;
 						}
+					
+							else
+							{
+								if(marca=="FelipeLamparas")
+								{
+								descuento=10;
+								}
 
-						if(marca=="FelipeLamparas")
-						{
-						descuento=10;
-						}
-
-						else
-						{
-						descuento=50;
-						}
+								else
+								{
+								descuento=50;
+								}
+							}		
+						
     				}
+			
 			}
 
 		}
