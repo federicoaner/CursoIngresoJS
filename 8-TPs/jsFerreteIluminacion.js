@@ -28,9 +28,9 @@ function CalcularPrecio ()
  	{
  		descuento=50;
 	}
-	
-	
-	if(cantidadLamparas==5)
+	else
+	{
+		if(cantidadLamparas==5)
 	{
 		if(marca=="ArgentinaLuz")
 		{
@@ -41,6 +41,9 @@ function CalcularPrecio ()
 			descuento=30;
 		}
 	}
+
+	else
+	{
 
 	if(cantidadLamparas==4)
 	{ 
@@ -55,9 +58,9 @@ function CalcularPrecio ()
 		}
 
 	}
-
-
-	if(cantidadLamparas==3)
+	else
+	{
+		if(cantidadLamparas==3)
 	{
 		if(marca=="ArgentinaLuz")
 		{
@@ -74,6 +77,19 @@ function CalcularPrecio ()
 			descuento=50;
 		}
     }
+	}
+
+		
+
+		}
+
+	}
+	
+	
+
+
+
+	
 
     
 	precioFinal=(precioBruto-(precioBruto*descuento)/100);
