@@ -4,21 +4,33 @@ function mostrar()
 	var contador=0;
 	var numeroIngresado;
 	var respuesta='si';
-	var	numeroMayor;
-	var numeroMenor;
+	var	maximo;
+	var minimo;
 	
 
 	while(respuesta!='no')
 	{
 		numeroIngresado=prompt("ingreso un numero");	
 		numeroIngresado=parseInt(numeroIngresado);
+			
+		if(contador==1)
+		{
+			numeroIngresado=maximo;
+			numeroIngresado=minimo;
+		}
+
 		respuesta=prompt("desea continuar?/ingrese si para continuar");
 		contador=contador+1;
 
 
-		if (numeroMayor>numeroMenor)
+		if(numeroIngresado<minimo)
 		{
-			alert(numeroMayor);
+			numeroIngresado=maximo;
+		}
+
+		if (numeroIngresado>maximo)
+		{
+			numeroIngresado=menor;
 		}
 
 	
