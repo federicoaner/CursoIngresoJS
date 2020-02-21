@@ -1,18 +1,25 @@
 function mostrar()
 {
 
-	var contador=0;
+	var contador;
 	var numeroIngresado;
 	var respuesta='si';
 	var	maximo;
 	var minimo;
+	contador=0;
 	
-
 	while(respuesta!='no')
 	{
+		contador=contador+1;
 		numeroIngresado=prompt("ingreso un numero");	
 		numeroIngresado=parseInt(numeroIngresado);
 			
+		while(isNaN(numeroIngresado))
+		{
+			numeroIngresado= prompt("ingrese solo numeros");
+			numeroIngresado= parseInt(numeroIngresado);
+		}
+
 		if(contador==1)
 		{
 			numeroIngresado=maximo;
@@ -20,23 +27,25 @@ function mostrar()
 		}
 
 		respuesta=prompt("desea continuar?/ingrese si para continuar");
-		contador=contador+1;
+		
 
 
 		if(numeroIngresado<minimo)
 		{
-			numeroIngresado=maximo;
+			minimo=numeroIngresado;
 		}
+			else
+			{
+				if (numeroIngresado>maximo)
+				{
+				maximo=numeroIngresado;
+				}				
+			}
 
-		if (numeroIngresado>maximo)
-		{
-			numeroIngresado=menor;
-		}
-
-	
 	}
 
-document.getElementById('maximo').value=numeroMayor;
+ document.getElementById('maximo').value=maximo; 
+ document.getElementById('minimo').value=minimo; 
 
 
 

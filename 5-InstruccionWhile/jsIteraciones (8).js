@@ -6,6 +6,8 @@ function mostrar()
 	var negativo=1;
 	var respuesta='si';
 	var numero;
+	var maximo;
+	var minimo;
 
 	while(respuesta=="si")
 	{
@@ -28,10 +30,10 @@ function mostrar()
 			negativo=negativo*numero;
 		}
 	
-		respuesta=prompt("desea continuar?/ingrese si para continuar");
+		
 	}
 
-	
+	respuesta=prompt("desea continuar?/ingrese si para continuar");
 
 
 
