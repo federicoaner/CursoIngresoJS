@@ -6,6 +6,7 @@ function mostrar()
 	var respuesta='si';
 	var	maximo;
 	var minimo;
+	
 	contador=0;
 	
 	while(respuesta!='no')

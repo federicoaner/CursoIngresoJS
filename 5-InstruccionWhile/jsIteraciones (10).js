@@ -12,12 +12,16 @@ function mostrar()
 	positivo=0;
 	negativo=0;
 	contador=0;
+	cantidadPositivos=0;
+	cantidadNegativos=0;
 
 	while(respuesta!='no')
 	{
 		contador=contador+1;
 		numeroIngresado=prompt("ingrese un numero");
 		numeroIngresado=parseInt(numeroIngresado);
+		
+
 		
 		while(isNaN(numeroIngresado))
 		{
@@ -30,6 +34,8 @@ function mostrar()
 		if(numeroIngresado>0)
 		{
 			positivo=positivo+numeroIngresado;
+			cantidadPositivos=cantidadPositivos+1;
+			
 		}
 		
 		else
@@ -38,11 +44,11 @@ function mostrar()
 			{
 				negativo=negativo+numeroIngresado;
 			}
+
 			
 		}
 
-		sumaPositivos=positivo+positivo;
-		sumaNegativos=negativo+negativo;
+		
 		
 
 		
@@ -50,6 +56,7 @@ function mostrar()
 
 	alert("la suma de los nros positivos es: "+positivo);
 	alert("la suma de los nros negativos es: "+negativo);
+	alert(cantidadPositivos);
 	
 
 
