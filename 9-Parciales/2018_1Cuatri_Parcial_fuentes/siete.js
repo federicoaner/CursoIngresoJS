@@ -7,8 +7,10 @@ function mostrar()
 	var contador;
 	var promedio;
 	var acumuladorNotas;
-	var mejorNota
-	var peorNota
+	var mejorNota;
+	var peorNota;	
+	var sexoMin;
+	var nota6;
 
 
 
@@ -16,6 +18,9 @@ function mostrar()
 	contador=0;
 	respuesta="si";
 	acumuladorNotas=0;
+	nota6=0;
+	
+
 
 
 
@@ -42,13 +47,30 @@ function mostrar()
 
 			if(contador==1)
 				{
-				notaAlumno=peorNota;
-				}
-
-			if(peorNota<notaAlumno)
-			{
 				peorNota=notaAlumno;
-			}
+				sexoMin=sexoAlumno;
+				
+				}
+				else
+				{
+					//peorNota=peorNota+notaAlumno;
+					
+					if(notaAlumno<peorNota)
+					{
+					peorNota=notaAlumno;
+					sexoMin=sexoAlumno;
+					}
+				}
+				
+					if(notaAlumno<7&&sexoAlumno=="m")
+					{
+						nota6++;
+					}
+
+				
+
+
+			
 		
 
 
@@ -64,7 +86,9 @@ function mostrar()
 	promedio=acumuladorNotas/contador;
 	
 	
-	alert("promedio"+promedio);
-	alert("peornota"+peorNota);
+	alert("promedio: "+promedio);
+	alert("peornota: "+peorNota);
+	alert("sexo de la peornota: "+ sexoMin);
+	alert("hombres con nota seis : "+nota6);
 
 }
