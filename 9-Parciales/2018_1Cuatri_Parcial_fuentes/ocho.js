@@ -6,10 +6,21 @@ function mostrar()
 	var letraIngresada;
 	var acumulador;
 	var numerosPares;
+	var numerosImpares;
+	var cantidadDeCeros=0;
+	var promedioPositivos;
+	var positivos;
+	var cantidadDePositivos;
+	var acumuladorPositivos;
 	
 
 	contador=0;
 	numerosPares=0;
+	numerosImpares=0;
+	cantidadDePositivos=0;
+	acumuladorPositivos=0;
+	positivos=0;
+	
 	
 
 	while(respuesta=="si")
@@ -38,7 +49,28 @@ function mostrar()
 		{
 			numerosPares++;
 		}
+		else
+		{
+			numerosImpares++;
+		}
 
+
+		if(numeroIngresado==0)
+		{
+			cantidadDeCeros++;
+		}
+
+		if(numeroIngresado>0)
+		{
+			positivos=numeroIngresado;
+		}
+		if(numeroIngresado>0)
+		{
+			cantidadDePositivos++;
+		}
+			
+
+		acumuladorPositivos=acumuladorPositivos+positivos;
 
 
 
@@ -50,7 +82,15 @@ function mostrar()
 
 	}//while principal
 
-	alert(numerosPares);
+	
+	promedioPositivos=positivos/cantidadDePositivos;
+	alert("numeros pares   "+numerosPares);
+	alert("numeros impares   "+numerosImpares);
+	alert("cantidad de ceros"+cantidadDeCeros);
+	alert("cantidad de positivos"+cantidadDePositivos);
+	alert("promedioPositivos")+promedioPositivos;
+
+
 
 
 
