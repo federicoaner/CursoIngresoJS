@@ -85,7 +85,6 @@ function mostrar()
 	}//while principal
 	promedio=acumuladorNotas/contador;
 	
-	
 	alert("promedio: "+promedio);
 	alert("peornota: "+peorNota);
 	alert("sexo de la peornota: "+ sexoMin);
