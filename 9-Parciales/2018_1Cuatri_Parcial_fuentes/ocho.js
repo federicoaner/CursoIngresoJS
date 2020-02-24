@@ -83,12 +83,12 @@ function mostrar()
 	}//while principal
 
 	
-	promedioPositivos=positivos/cantidadDePositivos;
+	promedioPositivos=acumuladorPositivos/cantidadDePositivos;
 	alert("numeros pares   "+numerosPares);
 	alert("numeros impares   "+numerosImpares);
 	alert("cantidad de ceros"+cantidadDeCeros);
 	alert("cantidad de positivos"+cantidadDePositivos);
-	alert("promedioPositivos")+promedioPositivos;
+	alert("promedioPositivos"+promedioPositivos);
 
 
 
