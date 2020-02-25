@@ -61,16 +61,28 @@ function mostrar()
 			cantidadDeCeros++;
 		}
 
+		
+		
+
 		if(numeroIngresado>0)
 		{
 			positivos=numeroIngresado;	
 			cantidadDePositivos++;
 		}
 		
-			if(numeroIngresado<0)
-			{
-			negativos=numeroIngresado;
-			}
+		else
+		{
+		negativos=numeroIngresado;
+		}
+			
+
+
+		
+
+
+		
+		
+			
 
 		
 		
@@ -91,7 +103,7 @@ function mostrar()
 	document.write("numeros impares   "+numerosImpares+"<br>");
 	document.write("cantidad de ceros"+cantidadDeCeros+"<br>");
 	document.write("cantidad de positivos"+cantidadDePositivos+"<br>");
-	document.write("promedioPositivos"+promedioPositivos+"<br>");
+	document.write("promedioPositivos "+promedioPositivos+"<br>");
 	document.write("suma de negativos es: "+acumuladorNegativos+"<br>");
 
 
