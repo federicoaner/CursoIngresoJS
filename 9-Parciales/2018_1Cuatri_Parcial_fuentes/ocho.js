@@ -12,7 +12,9 @@ function mostrar()
 	var positivos;
 	var cantidadDePositivos;
 	var acumuladorPositivos;
-	
+	var negativo;
+	var cantidadDeNegativos;
+	var acumuladorNegativos;
 
 	contador=0;
 	numerosPares=0;
@@ -20,6 +22,8 @@ function mostrar()
 	cantidadDePositivos=0;
 	acumuladorPositivos=0;
 	positivos=0;
+	acumuladorNegativos=0;
+	negativos=0;
 	
 	
 
@@ -42,9 +46,6 @@ function mostrar()
 			numeroIngresado=parseInt(numeroIngresado);
 		}
 
-
-		
-
 		if(numeroIngresado%2==0)
 		{
 			numerosPares++;
@@ -62,21 +63,23 @@ function mostrar()
 
 		if(numeroIngresado>0)
 		{
-			positivos=numeroIngresado;
-		}
-		if(numeroIngresado>0)
-		{
+			positivos=numeroIngresado;	
 			cantidadDePositivos++;
 		}
-			
-
-		acumuladorPositivos=acumuladorPositivos+positivos;
-
-
-
-
+		
+			if(numeroIngresado<0)
+			{
+			negativos=numeroIngresado;
+			}
 
 		
+		
+		
+		
+
+		acumuladorPositivos=acumuladorPositivos+positivos;
+		acumuladorNegativos=acumuladorNegativos+negativos;
+
 
 		respuesta=prompt("desea continuar? ingrese si para continuar");
 
@@ -84,11 +87,12 @@ function mostrar()
 
 	
 	promedioPositivos=acumuladorPositivos/cantidadDePositivos;
-	alert("numeros pares   "+numerosPares);
-	alert("numeros impares   "+numerosImpares);
-	alert("cantidad de ceros"+cantidadDeCeros);
-	alert("cantidad de positivos"+cantidadDePositivos);
-	alert("promedioPositivos"+promedioPositivos);
+	document.write("numeros pares   "+numerosPares+"<br>");
+	document.write("numeros impares   "+numerosImpares+"<br>");
+	document.write("cantidad de ceros"+cantidadDeCeros+"<br>");
+	document.write("cantidad de positivos"+cantidadDePositivos+"<br>");
+	document.write("promedioPositivos"+promedioPositivos+"<br>");
+	document.write("suma de negativos es: "+acumuladorNegativos+"<br>");
 
 
 
