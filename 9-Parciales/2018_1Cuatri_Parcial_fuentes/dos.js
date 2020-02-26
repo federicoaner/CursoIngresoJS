@@ -1,12 +1,48 @@
 function mostrar()
 {
-  	var nombre;
-  	var localidad;
+  
+	var nombre;
+	var localidad;
 
-  	nombre=document.getElementById('elNombre').value;
-  	localidad=document.getElementById('laLocalidad').value;
+	nombre=document.getElementById('elNombre').value;
+	localidad=document.getElementById('laLocalidad').value;
 
-  	alert("usted es: " + nombre + " y vive en: " + localidad);
+	alert("usted es: "+nombre+" y vive en: "+localidad);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	// var nombre;
+  	// var localidad;
+
+  	// nombre=document.getElementById('elNombre').value;
+  	// localidad=document.getElementById('laLocalidad').value;
+
+  	// alert("usted es: " + nombre + " y vive en: " + localidad);
 
 
 
