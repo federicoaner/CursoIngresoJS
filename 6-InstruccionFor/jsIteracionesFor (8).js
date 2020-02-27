@@ -14,7 +14,6 @@ function mostrar()
 		{
 			bandera=1;
 			break;
-		
 		}
 		
 	}
