@@ -14,6 +14,19 @@ function mostrar()
 	var notasAdolecentes;
 	var contadorAdolecentes;
 	var acumuladorNotasAdolecentes=0;
+	var promedioAdolecentes;
+	var notasMayores;
+	var contadorMayores=0;
+	var acumuldorMayores=0;
+	var promedioMayores;
+	var notasHombres;
+	var acumuladorHombres=0;
+	var contadorHombres=0;
+	var promedioHombres;
+	var notasMujeres;
+	var contadorMujeres=0;
+	var acumuladorMujeres=0;
+	var promedioMujeres;
 
 	varonesAprobados=0;
 	contMenoresdeEdad=0;
@@ -55,6 +68,12 @@ function mostrar()
 			contMenoresdeEdad++;
 			acumuladorNotasMenores=acumuladorNotasMenores+notasMenores;
 		}
+		else
+		{
+			notasMayores=nota;
+			contadorMayores++;
+			acumuldorMayores=acumuldorMayores+notasMayores;
+		}
 
 		if(edad>13 && edad>18 )
 		{
@@ -63,7 +82,18 @@ function mostrar()
 			acumuladorNotasAdolecentes=acumuladorNotasAdolecentes+notasAdolecentes;
 		}
 
-		
+		if (sexo=="m")
+		{
+			notasHombres=nota;
+			contadorHombres++;
+			acumuladorHombres=acumuladorHombres+notasHombres;
+		}
+		else
+		{
+			notasMujeres=nota;
+			contadorMujeres++;
+			acumuladorMujeres=acumuladorMujeres+notasMujeres;
+		}
 
 
 		respuesta=prompt("desea continuar?");
@@ -73,9 +103,19 @@ function mostrar()
 
 
 	promedioMenores=acumuladorNotasMenores/contMenoresdeEdad
-	promedi
-	document.write("la cantidad de varones aprobados es: <br>" + varonesAprobados);
-	document.write("promedioMenores notas menores es: <br>" + promedioMenores);
+	promedioAdolecentes=acumuladorNotasAdolecentes/contadorAdolecentes
+	promedioMayores=acumuldorMayores/contadorMayores;
+	promedioHombres=acumuladorHombres/contadorHombres;
+	promedioMujeres=acumuladorMujeres/contadorMujeres;
+	document.write("la cantidad de varones aprobados es: " + varonesAprobados+"<br>");
+	document.write("promedioMenores notas menores es: " + promedioMenores+"<br>");
+	document.write("promedioAdolecentes notas  es: " + promedioAdolecentes+"<br>");
+	document.write("promedio notas mayores es: "+promedioMayores+"<br>");
+	document.write("promedio notas hombres es: "+promedioHombres+"<br>");
+	document.write("promedio notas mujeres es: "+promedioMujeres+"<br>");
+
+	
+
 		
 	
 }
