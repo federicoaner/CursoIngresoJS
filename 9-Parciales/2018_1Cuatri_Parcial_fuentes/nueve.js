@@ -96,7 +96,7 @@ function mostrar()
 	promedio=acumulador/contador;
 	document.write("la cant de temp pares es: "+contadorTempPar+"<br>");
 	document.write("el peso maximo es: "+pesoMaximo+"<br>");
-	document.write(marcaMasPesado+"<br>");
+	document.write("la marca del mas pesado es: "+marcaMasPesado+"<br>");
 	document.write("la cantidad de productos bajo cero es: "+contadorBajoCero+"<br>");
 	document.write("el promedio es: "+promedio+"<br>");
 	document.write("el peso maximo es: " +pesoMaximo+ "  el peso peso Minimo es: "+pesoMinimo+"<br>");

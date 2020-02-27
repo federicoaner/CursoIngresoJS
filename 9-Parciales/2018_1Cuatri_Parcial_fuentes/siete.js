@@ -33,7 +33,7 @@ function mostrar()
 		sexoAlumno=prompt("ingrese su sexo, M (masculino) o F (femenino): ")
 		
 
-		while(notaAlumno<0||notaAlumno>10)
+		while(isNaN(notaAlumno)||notaAlumno<0||notaAlumno>10)
 		{
 			notaAlumno=prompt("error la nota debe ser un nro entre 0 y 10: ");
 			notaAlumno=parseInt(notaAlumno);

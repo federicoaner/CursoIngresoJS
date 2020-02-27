@@ -21,9 +21,9 @@ function mostrar()
 	numerosImpares=0;
 	cantidadDePositivos=0;
 	acumuladorPositivos=0;
-	positivos=0;
+	//positivos=0;
 	acumuladorNegativos=0;
-	negativos=0;
+	//negativos=0;
 
 	
 	
