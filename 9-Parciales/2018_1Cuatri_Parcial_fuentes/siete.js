@@ -12,17 +12,11 @@ function mostrar()
 	var sexoMin;
 	var nota6;
 
-
-
-
 	contador=0;
 	respuesta="si";
 	acumuladorNotas=0;
 	nota6=0;
 	
-
-
-
 
 	while(contador<5)
 	{
@@ -67,20 +61,10 @@ function mostrar()
 						nota6++;
 					}
 
-				
-
-
-			
-		
-
-
 
 		acumuladorNotas=acumuladorNotas+notaAlumno;//acumulador va aca afuera
 
 		
-		
-
-
 
 	}//while principal
 	promedio=acumuladorNotas/contador;

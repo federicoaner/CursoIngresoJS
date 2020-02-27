@@ -1,8 +1,7 @@
 function mostrar()
 {
 
-
-    var respuesta="si";
+	var respuesta="si";
 	var contador;
 	var pesoIngresado;
 	var marcaIngresada;
@@ -14,8 +13,6 @@ function mostrar()
 	var marcaMasPesado;
 	var contadorBajoCero;
 	var acumulador;
-
-	
 
 	contador=0;
 	contadorPar=0;
