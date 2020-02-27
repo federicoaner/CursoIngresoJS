@@ -24,6 +24,7 @@ function mostrar()
 	positivos=0;
 	acumuladorNegativos=0;
 	negativos=0;
+
 	
 	
 
@@ -62,33 +63,22 @@ function mostrar()
 		}
 
 		
-		
-
-		if(numeroIngresado>0)
-		{
-			positivos=numeroIngresado;	
-			cantidadDePositivos++;
-		}
-		
 		else
 		{
-		negativos=numeroIngresado;
+			if(numeroIngresado>0)
+			{
+			positivos=numeroIngresado;	
+			cantidadDePositivos++;
+			}
+		
+			if(numeroIngresado<0)
+			{
+			negativos=numeroIngresado;
+			}
 		}
-			
-
-
-		
-
 
 		
 		
-			
-
-		
-		
-		
-		
-
 		acumuladorPositivos=acumuladorPositivos+positivos;
 		acumuladorNegativos=acumuladorNegativos+negativos;
 
@@ -105,15 +95,6 @@ function mostrar()
 	document.write("cantidad de positivos"+cantidadDePositivos+"<br>");
 	document.write("promedioPositivos "+promedioPositivos+"<br>");
 	document.write("suma de negativos es: "+acumuladorNegativos+"<br>");
-
-
-
-
-
-
-
-
-
 
 
 }

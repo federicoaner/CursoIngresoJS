@@ -24,7 +24,7 @@ function mostrar()
 
 
 
-	while(contador<3)
+	while(contador<5)
 	{
 		contador++;
 		
