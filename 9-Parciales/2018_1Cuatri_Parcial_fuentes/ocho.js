@@ -47,40 +47,35 @@ function mostrar()
 			numeroIngresado=parseInt(numeroIngresado);
 		}
 
-		if(numeroIngresado%2==0)
-		{
-			numerosPares++;
-		}
-		else
-		{
-			numerosImpares++;
-		}
-
-
-		if(numeroIngresado==0)
-		{
-			cantidadDeCeros++;
-		}
-
-		
-		else
-		{
+	
 			if(numeroIngresado>0)
 			{
 			positivos=numeroIngresado;	
 			cantidadDePositivos++;
+			acumuladorPositivos=acumuladorPositivos+positivos;
 			}
 		
 			if(numeroIngresado<0)
 			{
 			negativos=numeroIngresado;
+			acumuladorNegativos=acumuladorNegativos+negativos;
 			}
-		}
+		
 
-		
-		
-		acumuladorPositivos=acumuladorPositivos+positivos;
-		acumuladorNegativos=acumuladorNegativos+negativos;
+			if(numeroIngresado==0)
+			{
+			cantidadDeCeros++;
+			}
+
+
+			if(numeroIngresado%2==0)
+			{
+			numerosPares++;
+			}
+			else
+			{
+			numerosImpares++;
+			}
 
 
 		respuesta=prompt("desea continuar? ingrese si para continuar");
