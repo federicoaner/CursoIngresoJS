@@ -11,9 +11,6 @@ function mostrar()
 	var carga=0;
 
 	
-	
-	
-
 	while(respuesta=="si")
 	{
 		contador++;
@@ -33,11 +30,11 @@ function mostrar()
 		{
 			alert("supera la carga maxima");
 		}
-		
-
-
-
+	
 		respuesta=prompt("desea continuar?");
+
+
+		
 
 		
 
