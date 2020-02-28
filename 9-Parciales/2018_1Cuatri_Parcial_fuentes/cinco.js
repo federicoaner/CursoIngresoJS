@@ -8,9 +8,9 @@ function mostrar()
 	var cantidadDias;
 	var formadePago;
 	var contador=0;
-	var efectivo;
-	var tarjeta;
-	var	qr;
+	var efectivo=0;
+	var tarjeta=0;
+	var	qr=0;
 	var cantidadMaxPersonas;
 	var cantidadMinPersonas;
 	var huespedqTrajoMasPersonas;
@@ -18,6 +18,7 @@ function mostrar()
 	var cantidadMindias;
 	var personasMasDias;
 	var acumuladorDias=0;
+	var totalpersonas=0;
 
 
 	while(respuesta=="si")
@@ -41,12 +42,20 @@ function mostrar()
 
 		respuesta=prompt("desea continuar?");
 
+			totalpersonas=totalpersonas+cantidadPersonas;
+			acumuladorDias=acumuladorDias+cantidadDias;	
+
+
 
 		if(contador==1)
 		{
 			cantidadMaxPersonas=cantidadPersonas;
 			cantidadMinPersonas=cantidadPersonas;
-			
+			cantidadMaxdias=cantidadDias;
+			cantidadMindias=cantidadDias;
+			huespedqTrajoMasPersonas=nombreHuesped;
+			personasMasDias=cantidadPersonas;
+
 		}
 
 
@@ -62,12 +71,6 @@ function mostrar()
 
 
 
-		if(contador==1)
-		{
-			cantidadMaxdias=cantidadDias;
-			cantidadMindias=cantidadDias;
-		}
-
 		if(cantidadDias>cantidadMaxdias)
 		{
 			cantidadMaxdias=cantidadDias;
@@ -75,20 +78,56 @@ function mostrar()
 		}
 		else
 		{
-			cantidadMaxdias=cantidadDias;
+			cantidadMindias=cantidadDias;
+		}
+
+		switch(formadePago)
+		{
+			case"tarjeta":
+				tarjeta++;
+				break;
+
+			case"qr":
+				qr++;
+				break;
+
+			case"efectivo":
+				efectivo++;
+				break;
 		}
 
 		
+
 		
-		acumuladorDias=acumuladorDias+cantidadDias;
+
+
+
 
 	}//while
 
-	promedio=acumuladorDias/cantidadDias;
+	promedio=acumuladorDias/totalpersonas;
 	
 	document.write("la persona q trajo mas huespedes se llama " + huespedqTrajoMasPersonas+"<br>")
 	document.write("personas q se quedaron mas dias"+personasMasDias+"<br>")
 	document.write("el promedio de dias de reserva es de : "+promedio+"<br>")
+
+	if(tarjeta>qr &&tarjeta>efectivo)
+		{
+			document.write("el metodo mas utilizado fue tarjeta"+"<br>")
+
+		}
+		else
+		{
+			if(qr>tarjeta&&qr>efectivo)
+			{
+			document.write("el metodo mas utilizado qr " +"<br>")
+			}
+
+			else
+			{
+			document.write("el metodo mas utilizado fue efectivo"+"<br>")
+			}
+		}
 
 
 
