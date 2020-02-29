@@ -36,6 +36,7 @@ function mostrar()
 			kilosxBolsa=parseInt(kilosxBolsa);
 		}
 
+		
 		cantidadBolsas=prompt("ingrese cantidad de bolsas");
 		cantidadBolsas=parseInt(cantidadBolsas);
 		while(isNaN(cantidadBolsas))
@@ -43,6 +44,8 @@ function mostrar()
 		cantidadBolsas=prompt("ingrese cantidad de bolsas");
 		cantidadBolsas=parseInt(cantidadBolsas);
 		}
+
+		
 
 		cantidadKilos=kilosxBolsa*cantidadBolsas
 		cargaContenedor=cargaContenedor+cantidadKilos
@@ -115,7 +118,7 @@ function mostrar()
 	document.write("la marca con mas kilos es: "+maxMarca+"<br>")
 	document.write("la marca con mas bolsas es: "+marcaMasBolsas+"<br>")
 	document.write("la marca con el mayor importe es : "+marcaMasImporte+"<br>")
-	document.write("el importe de la marca con menos kilos es :  "+importeminkilos+ "y la marca es"+marcaminkilos+"<br>")
+	document.write("el importe de la marca con menos kilos es :  "+importeminkilos+ "  y la marca es "+marcaminkilos+"<br>")
 
 
 
